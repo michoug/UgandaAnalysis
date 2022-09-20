@@ -1,0 +1,137 @@
+__default__:
+  time: "0-01:00:00"
+  partition: "batch"
+  qos: "normal"
+  output: slurmlog/{rule}.{wildcards}.out
+  error: slrumlog/{rule}.{wildcards}.out
+  account: "project_ensemble"
+  nodes: 1
+  n: 1
+  cpus-per-task: 1
+  explicit: ""
+  job-name: "binning.{rule}"
+
+
+mapping:
+  time: "00-12:00:00"
+  partition: "batch"
+  qos: "normal"
+  cpu-per-task: 7
+  nodes: 1
+  n: 1
+
+metabat2_mapping:
+  time: "00-05:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+
+metabat2:
+  time: "00-05:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+concoct_prepare:
+  time: "00-08:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+concoct: 
+  time: "01-00:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+metabinner_install:
+  time: "00-01:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+metabinner_coverage:
+  time: "00-08:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+metabinner:
+  time: "01-00:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+prepare_dasTool:
+  time: "00-01:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+dastool:
+  time: "01-00:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+checkm:
+  time: "00-12:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+
+dRep_prepare:
+  time: "00-01:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+get_all_bins:
+  time: "00-01:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+dRep:
+  time: "01-00:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+  explicit: ""
+
+gtdbtk:
+  time: "00-12:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1
+
+checkm_final:
+  time: "00-12:00:00"
+  partition: "batch"
+  qos: "normal"
+  nodes: 1
+  n: 1

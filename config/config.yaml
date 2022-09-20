@@ -1,0 +1,51 @@
+# Directory where assembly files are
+assembly_dir: "/scratch/users/gmichoud/uganda_imp3/assembly"
+
+# Directory to save the output to
+results_dir: "/scratch/users/gmichoud/uganda_imp3/results"
+
+# Directory for all the conda environments
+env_dir: "/scratch/users/gmichoud/uganda_imp3/envs"
+
+# Directory for databases
+db_dir: "/scratch/users/gmichoud/uganda_imp3/dbs"
+
+# Directory for trimmed reads
+reads_dir: "/scratch/users/gmichoud/uganda_imp3/reads"
+
+# Number of cpus or threads to use
+threads: 28
+
+filter_length:
+    threads: 4
+    
+mdmcleaner:
+    threads: 7
+
+mapping:
+    threads: 7
+
+metabat2:
+    threads: 14
+
+concoct:
+    threads: 14
+
+metabinner:
+    length: 2000
+    threads: 14
+
+dasTool:
+    threads: 14
+
+checkM:
+    threads: 14
+
+dRep:
+    threads: 28
+    comp: 70
+    cont: 10
+
+gtdbtk:
+    threads: 14
+    path: "/scratch/users/gmichoud/DB/release207_v2"

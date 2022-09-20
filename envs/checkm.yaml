@@ -1,0 +1,7 @@
+name: metabat
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - checkm-genome=1.2
