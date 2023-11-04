@@ -27,7 +27,8 @@ rule all:
         expand(os.path.join(RESULTS_DIR, "Bins/{sample}/DasTool/das_DASTool_summary.tsv"), sample = SAMPLES),
         expand(os.path.join(RESULTS_DIR, "Bins/dRep/dereplicated_genomes")),
         expand(os.path.join(RESULTS_DIR, "Bins/checkm_final")),
-        expand(os.path.join(RESULTS_DIR, "Bins/gtdbtk_final"))
+        expand(os.path.join(RESULTS_DIR, "Bins/gtdbtk_final")),
+        expand(os.path.join(RESULTS_DIR, "cat_mags_cov.txt"))
 
 
 include: "rules/coverage.smk"
